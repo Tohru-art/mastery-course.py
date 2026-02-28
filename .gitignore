@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual Environments
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables — NEVER commit API keys!
+.env
+.env.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Model weights and large data files
+*.pt
+*.pth
+*.h5
+*.pkl
+*.model
+data/raw/
+*.csv
+!exercises/**/*.csv
+
+# Logs
+*.log
+logs/
+
+# Test cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
