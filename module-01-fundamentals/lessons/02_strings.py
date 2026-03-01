@@ -77,7 +77,10 @@ print("abc123".isalnum())  # True
 user_input = "What is machine learning?"
 system_prompt = "You are a helpful AI tutor."
 
-full_prompt = f"System: {system_prompt}, User: {user_input}, Assistant:"
+full_prompt = f"""
+System: {system_prompt}
+User: {user_input}
+Assistant:"""
 
 print(full_prompt)
 

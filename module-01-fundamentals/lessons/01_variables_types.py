@@ -20,13 +20,6 @@ print("Enrolled:", is_enrolled)
 print("Score:", score)
 
 
-
-
-
-
-
-
-
 # ── 2. Checking Types ─────────────────────────────────────────────────────────
 print("\n-- Types --")
 print(type(name))        # <class 'str'>
