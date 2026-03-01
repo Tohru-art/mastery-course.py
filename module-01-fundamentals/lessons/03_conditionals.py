@@ -88,7 +88,7 @@ if confidence >= 0.90:
 elif confidence >= 0.70:
     label = "Medium confidence"
 else:
-    label = "Low confidence — needs review"
+    label = "Low confidence — needs review."
 
 print(f"Prediction confidence {confidence:.0%}: {label}")
 
