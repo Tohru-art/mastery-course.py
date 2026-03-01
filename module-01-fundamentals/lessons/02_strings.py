@@ -12,20 +12,21 @@ s3 = """This is a
 multi-line string"""
 
 print(s3)
-
+print("\n")
 # ── 2. f-strings (USE THESE — they're the modern way) ────────────────────────
 name = "Alex"
 score = 95.678
 print(f"Name: {name}, Score: {score:.2f}")  # :.2f = 2 decimal places
 print(f"2 + 2 = {2 + 2}")                   # expressions work inside {}
 
+print("\n")
 # ── 3. String Methods ─────────────────────────────────────────────────────────
 text = "  Hello, World!  "
 
 print(text.strip())           # removes leading/trailing whitespace
 print(text.lower())           # lowercase
 print(text.upper())           # uppercase
-print(text.replace("World", "Python"))
+print(text.replace("World", "Python!"))
 print(text.strip().split(", "))   # split into list: ['Hello', 'World!  ']
 
 sentence = "the quick brown fox"
@@ -35,6 +36,7 @@ print(sentence.count("o"))    # count occurrences of "o"
 print(sentence.startswith("the"))  # True
 print(sentence.endswith("fox"))    # True
 
+print("\n")
 # ── 4. String Indexing & Slicing ──────────────────────────────────────────────
 # Strings are sequences — you can index and slice them
 word = "Python"
@@ -75,10 +77,7 @@ print("abc123".isalnum())  # True
 user_input = "What is machine learning?"
 system_prompt = "You are a helpful AI tutor."
 
-full_prompt = f"""
-System: {system_prompt}
-User: {user_input}
-Assistant:"""
+full_prompt = f"System: {system_prompt}, User: {user_input}, Assistant:"
 
 print(full_prompt)
 
