@@ -17,9 +17,12 @@ print(scores[-1])      # 88 (last)
 print(scores[1:3])     # [92, 78]
 
 # Modify
-scores.append(99)          # add to end
-scores.insert(0, 100)      # insert at position
-scores.remove(78)          # remove first occurrence of 78
+scores.append(99) 
+print(scores)         # add to end
+scores.insert(0, 100)
+print(scores)      # insert at position
+scores.remove(78)  
+print(scores)        # remove first occurrence of 78
 popped = scores.pop()      # remove and return last item
 print(scores)
 
