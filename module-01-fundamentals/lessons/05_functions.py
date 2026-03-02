@@ -11,6 +11,7 @@ def greet(name):
 
 print(greet("Alex"))
 
+print("\n")
 # ── 2. Default Parameters ─────────────────────────────────────────────────────
 def power(base, exponent=2):    # exponent defaults to 2
     return base ** exponent
@@ -19,6 +20,7 @@ print(power(3))       # 9  (uses default exponent=2)
 print(power(3, 3))    # 27
 print(power(2, 10))   # 1024
 
+print("\n")
 # ── 3. Keyword Arguments ──────────────────────────────────────────────────────
 def describe_model(name, accuracy, parameters):
     print(f"Model: {name}")
@@ -28,6 +30,7 @@ def describe_model(name, accuracy, parameters):
 # Call with keyword args — order doesn't matter
 describe_model(accuracy=0.943, name="GPT-4", parameters=170_000_000_000)
 
+print("\n")
 # ── 4. *args — Variable Number of Arguments ──────────────────────────────────
 def add(*numbers):
     return sum(numbers)
@@ -36,6 +39,7 @@ print(add(1, 2))          # 3
 print(add(1, 2, 3, 4))    # 10
 print(add(5, 10, 15, 20)) # 50
 
+print("\n")
 # ── 5. **kwargs — Variable Keyword Arguments ─────────────────────────────────
 def print_info(**details):
     for key, value in details.items():
@@ -43,13 +47,15 @@ def print_info(**details):
 
 print_info(name="Alex", major="AI", year=2)
 
+print("\n")
 # ── 6. Return Multiple Values ─────────────────────────────────────────────────
 def min_max(numbers):
     return min(numbers), max(numbers)   # returns a tuple
 
-low, high = min_max([3, 1, 9, 2, 7])
+low, high = min_max([3, 1, 9, 2, 7, 12, 300])
 print(f"Min: {low}, Max: {high}")
 
+print("\n")
 # ── 7. Scope — Local vs Global ────────────────────────────────────────────────
 total = 100   # global variable
 
@@ -69,6 +75,7 @@ increment()
 increment()
 print(f"Counter: {counter}")  # 2
 
+print("\n")
 # ── 8. Docstrings — Document your functions ────────────────────────────────────
 def calculate_accuracy(correct, total):
     """
@@ -91,8 +98,9 @@ def calculate_accuracy(correct, total):
 
 acc = calculate_accuracy(87, 100)
 print(f"Accuracy: {acc:.1%}")
-help(calculate_accuracy)  # prints the docstring
+(calculate_accuracy)  # prints the docstring
 
+print("\n")
 # ── 9. Type Hints (Modern Python) ─────────────────────────────────────────────
 # These don't enforce types but make code more readable
 def predict(text: str, threshold: float = 0.5) -> dict:
@@ -106,6 +114,7 @@ def predict(text: str, threshold: float = 0.5) -> dict:
 result = predict("This movie was amazing!")
 print(result)
 
+print("\n")
 # ── 10. Pure Functions (Best Practice) ───────────────────────────────────────
 # A pure function: same inputs always return same output, no side effects
 # This is important in ML — your preprocessing functions should be pure
