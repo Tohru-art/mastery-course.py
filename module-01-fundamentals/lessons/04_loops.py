@@ -12,7 +12,7 @@ for fruit in fruits:
 
 # Loop over a range
 for i in range(5):        # 0, 1, 2, 3, 4
-    print(i, end=" ")
+    print(i, end=" ")     # Prints each numbers with a space instead of a new line
 print()
 
 for i in range(1, 6):     # 1, 2, 3, 4, 5
@@ -54,6 +54,7 @@ languages = ["Python", "JavaScript", "Go"]
 for index, lang in enumerate(languages):
     print(f"{index}: {lang}")
 
+print("\n")
 # Start index at 1
 for index, lang in enumerate(languages, start=1):
     print(f"{index}. {lang}")
@@ -65,6 +66,7 @@ scores = [92, 87, 95]
 for name, score in zip(names, scores):
     print(f"{name}: {score}")
 
+print("\n")
 # ── 6. Looping over Dictionaries ──────────────────────────────────────────────
 model_scores = {"GPT-4": 0.95, "Claude": 0.93, "Gemini": 0.91}
 
